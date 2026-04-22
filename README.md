@@ -1,40 +1,23 @@
 # Useful Scripts Toolbox
 
-A collection of practical utility scripts for system administration and automation. Includes a QR code generator with logo overlay, image background remover, DNS configuration helper, network interface cleanup utility, file reorganization script, and a cron expression testing notebook.
+Collection de scripts utilitaires Python et Bash pour l'administration système et l'automatisation.
 
-## Features
+## Scripts inclus
 
-- QR code generation with custom logo embedding
-- Image background removal using AI/segmentation
-- DNS server configuration automation
-- Unused network interface detection and removal
-- File reorganization utility
-- Interactive cron expression tester (Jupyter notebook)
+- `qrcode_gen.py` — Générateur de QR code avec logo embarqué (PIL + qrcode)
+- `rm_background.py` — Suppression automatique du fond d'une image
+- `dns_config.sh` — Script de configuration de serveur DNS
+- `remove_unused_interface.sh` — Nettoyage des interfaces réseau inutilisées
+- `reorganize.sh` — Réorganisation automatique de fichiers
+- `cron_expression_tester.ipynb` — Testeur d'expressions cron (croniter)
 
-## Tech Stack
+## Stack technique
 
-- Python 3 (qrcode, Pillow, rembg/backgroundremover)
-- Bash
-- Jupyter Notebook
-- croniter (cron expression parsing)
+- Python, Bash
+- PIL/Pillow, qrcode, croniter
 
-## Setup
-
-Install Python dependencies:
+## Installation
 
 ```bash
-pip install qrcode[pil] pillow rembg croniter
-```
-
-Scripts are standalone and require no additional installation beyond their stated dependencies.
-
-## Project Structure
-
-```
-qrcode_gen.py                # QR code generator with logo overlay
-rm_background.py             # Image background removal script
-dns_config.sh                # DNS server configuration helper
-remove_unused_interface.sh   # Network interface cleanup script
-reorganize.sh                # File reorganization utility
-cron_expression_tester.ipynb # Jupyter notebook for testing cron expressions
+pip install pillow qrcode croniter
 ```
